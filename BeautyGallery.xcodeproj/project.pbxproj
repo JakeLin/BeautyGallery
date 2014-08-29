@@ -12,6 +12,8 @@
 		236CE13919B0B0FA00B1E85A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 236CE13719B0B0FA00B1E85A /* Main.storyboard */; };
 		236CE13B19B0B0FA00B1E85A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 236CE13A19B0B0FA00B1E85A /* Images.xcassets */; };
 		236CE14719B0B0FA00B1E85A /* BeautyGalleryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236CE14619B0B0FA00B1E85A /* BeautyGalleryTests.swift */; };
+		236CE15119B0B31900B1E85A /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236CE15019B0B31900B1E85A /* GalleryViewController.swift */; };
+		236CE15319B0B50900B1E85A /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236CE15219B0B50900B1E85A /* ViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 		236CE14019B0B0FA00B1E85A /* BeautyGalleryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeautyGalleryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		236CE14519B0B0FA00B1E85A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		236CE14619B0B0FA00B1E85A /* BeautyGalleryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeautyGalleryTests.swift; sourceTree = "<group>"; };
+		236CE15019B0B31900B1E85A /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		236CE15219B0B50900B1E85A /* ViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 			children = (
 				236CE13319B0B0FA00B1E85A /* AppDelegate.swift */,
 				236CE13519B0B0FA00B1E85A /* ViewController.swift */,
+				236CE15219B0B50900B1E85A /* ViewControllerExtension.swift */,
+				236CE15019B0B31900B1E85A /* GalleryViewController.swift */,
 				236CE13719B0B0FA00B1E85A /* Main.storyboard */,
 				236CE13A19B0B0FA00B1E85A /* Images.xcassets */,
 				236CE13119B0B0FA00B1E85A /* Supporting Files */,
@@ -208,6 +214,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				236CE15319B0B50900B1E85A /* ViewControllerExtension.swift in Sources */,
+				236CE15119B0B31900B1E85A /* GalleryViewController.swift in Sources */,
 				236CE13619B0B0FA00B1E85A /* ViewController.swift in Sources */,
 				236CE13419B0B0FA00B1E85A /* AppDelegate.swift in Sources */,
 			);
