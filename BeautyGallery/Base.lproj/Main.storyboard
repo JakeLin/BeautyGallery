@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.8" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.8" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="dlX-tk-2ph">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--女神画廊-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="BeautyGallery" customModuleProvider="target" sceneMemberID="viewController">
@@ -12,46 +12,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="女神画廊" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vgg-c1-nMp">
-                                <rect key="frame" x="112" y="20" width="96" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择女神" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8ol-RQ-d2B">
-                                <rect key="frame" x="16" y="94" width="85" height="21"/>
+                                <rect key="frame" x="16" y="81" width="85" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" id="KZi-mV-1v1">
-                                <rect key="frame" x="0.0" y="123" width="320" height="162"/>
+                                <rect key="frame" x="0.0" y="110" width="320" height="162"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MiN-Ox-atE">
-                                <rect key="frame" x="145" y="288" width="30" height="30"/>
+                                <rect key="frame" x="145" y="275" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="确定">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="qTi-lh-hdR" kind="modal" identifier="GoToGallery" id="9Y6-TL-Rd3"/>
+                                    <segue destination="qTi-lh-hdR" kind="push" identifier="GoToGallery" id="9Y6-TL-Rd3"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="女神画廊" id="nfa-Zt-FxB"/>
                     <connections>
                         <outlet property="beautyPicker" destination="KZi-mV-1v1" id="ivM-2A-KVh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="202.66666666666666" y="313.34666666666664"/>
+            <point key="canvasLocation" x="734" y="313"/>
         </scene>
-        <!--Gallery View Controller-->
+        <!--女神画廊-->
         <scene sceneID="CZL-Jb-UxH">
             <objects>
                 <viewController id="qTi-lh-hdR" customClass="GalleryViewController" customModule="BeautyGallery" customModuleProvider="target" sceneMemberID="viewController">
@@ -76,6 +70,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="女神画廊" id="ces-bO-hd5">
+                        <barButtonItem key="rightBarButtonItem" title="分享" id="fkr-yx-v0n">
+                            <connections>
+                                <action selector="shareTapped:" destination="qTi-lh-hdR" id="Iai-dR-FJX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="beautyImage" destination="ciY-nD-IPs" id="j66-nM-x9p"/>
                     </connections>
@@ -83,7 +84,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Znh-gc-5pd" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="JVn-La-ckh" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="688" y="313"/>
+            <point key="canvasLocation" x="1220" y="313"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lh3-IN-vcM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dlX-tk-2ph" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aPL-u9-38e">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="GJV-Hq-JAl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KA0-aE-wRG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="202" y="313"/>
         </scene>
     </scenes>
     <resources>
