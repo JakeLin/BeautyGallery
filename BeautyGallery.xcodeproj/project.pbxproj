@@ -10,10 +10,10 @@
 		236CE13419B0B0FA00B1E85A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236CE13319B0B0FA00B1E85A /* AppDelegate.swift */; };
 		236CE13619B0B0FA00B1E85A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236CE13519B0B0FA00B1E85A /* ViewController.swift */; };
 		236CE13919B0B0FA00B1E85A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 236CE13719B0B0FA00B1E85A /* Main.storyboard */; };
-		236CE13B19B0B0FA00B1E85A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 236CE13A19B0B0FA00B1E85A /* Images.xcassets */; };
 		236CE14719B0B0FA00B1E85A /* BeautyGalleryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236CE14619B0B0FA00B1E85A /* BeautyGalleryTests.swift */; };
 		236CE15119B0B31900B1E85A /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236CE15019B0B31900B1E85A /* GalleryViewController.swift */; };
 		236CE15319B0B50900B1E85A /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236CE15219B0B50900B1E85A /* ViewControllerExtension.swift */; };
+		236E400619B5B15A00A4233B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 236E400519B5B15A00A4233B /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,12 +32,12 @@
 		236CE13319B0B0FA00B1E85A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		236CE13519B0B0FA00B1E85A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		236CE13819B0B0FA00B1E85A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		236CE13A19B0B0FA00B1E85A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		236CE14019B0B0FA00B1E85A /* BeautyGalleryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeautyGalleryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		236CE14519B0B0FA00B1E85A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		236CE14619B0B0FA00B1E85A /* BeautyGalleryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeautyGalleryTests.swift; sourceTree = "<group>"; };
 		236CE15019B0B31900B1E85A /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		236CE15219B0B50900B1E85A /* ViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		236E400519B5B15A00A4233B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +84,7 @@
 				236CE15219B0B50900B1E85A /* ViewControllerExtension.swift */,
 				236CE15019B0B31900B1E85A /* GalleryViewController.swift */,
 				236CE13719B0B0FA00B1E85A /* Main.storyboard */,
-				236CE13A19B0B0FA00B1E85A /* Images.xcassets */,
+				236E400519B5B15A00A4233B /* Images.xcassets */,
 				236CE13119B0B0FA00B1E85A /* Supporting Files */,
 			);
 			path = BeautyGallery;
@@ -196,7 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				236CE13919B0B0FA00B1E85A /* Main.storyboard in Resources */,
-				236CE13B19B0B0FA00B1E85A /* Images.xcassets in Resources */,
+				236E400619B5B15A00A4233B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +403,7 @@
 				236CE14C19B0B0FA00B1E85A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		236CE14D19B0B0FA00B1E85A /* Build configuration list for PBXNativeTarget "BeautyGalleryTests" */ = {
 			isa = XCConfigurationList;
@@ -411,6 +412,7 @@
 				236CE14F19B0B0FA00B1E85A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
