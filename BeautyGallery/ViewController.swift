@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     }
 
     override func prepareForSegue(segue:
-        UIStoryboardSegue!, sender: AnyObject!) {
+        UIStoryboardSegue, sender: AnyObject!) {
             if segue.identifier == "GoToGallery" {
                 let index = beautyPicker.selectedRowInComponent(0)
                 

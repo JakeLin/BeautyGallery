@@ -14,6 +14,7 @@
 		236CE15119B0B31900B1E85A /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236CE15019B0B31900B1E85A /* GalleryViewController.swift */; };
 		236CE15319B0B50900B1E85A /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236CE15219B0B50900B1E85A /* ViewControllerExtension.swift */; };
 		236E400619B5B15A00A4233B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 236E400519B5B15A00A4233B /* Images.xcassets */; };
+		239A1C4719BDE32F008DFF40 /* KoreanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239A1C4619BDE32F008DFF40 /* KoreanViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		236CE15019B0B31900B1E85A /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		236CE15219B0B50900B1E85A /* ViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 		236E400519B5B15A00A4233B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		239A1C4619BDE32F008DFF40 /* KoreanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KoreanViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				236CE13519B0B0FA00B1E85A /* ViewController.swift */,
 				236CE15219B0B50900B1E85A /* ViewControllerExtension.swift */,
 				236CE15019B0B31900B1E85A /* GalleryViewController.swift */,
+				239A1C4619BDE32F008DFF40 /* KoreanViewController.swift */,
 				236CE13719B0B0FA00B1E85A /* Main.storyboard */,
 				236E400519B5B15A00A4233B /* Images.xcassets */,
 				236CE13119B0B0FA00B1E85A /* Supporting Files */,
@@ -215,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				236CE15319B0B50900B1E85A /* ViewControllerExtension.swift in Sources */,
+				239A1C4719BDE32F008DFF40 /* KoreanViewController.swift in Sources */,
 				236CE15119B0B31900B1E85A /* GalleryViewController.swift in Sources */,
 				236CE13619B0B0FA00B1E85A /* ViewController.swift in Sources */,
 				236CE13419B0B0FA00B1E85A /* AppDelegate.swift in Sources */,
