@@ -81,4 +81,4 @@ Beauty Gallery是一个使用Swift语言开发的iOS App，这是免费在线视
 
 *最终源码*
 
-[Tab Bar Controller课程源码](https://github.com/JakeLin/BeautyGallery/archive/V4.zip)
+[Auto Layout课程源码](https://github.com/JakeLin/BeautyGallery/archive/V4.zip)
