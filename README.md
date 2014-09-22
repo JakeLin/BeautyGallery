@@ -34,6 +34,104 @@ Beauty Gallery是一个使用Swift语言开发的iOS App，这是免费在线视
 
 如果没有学习前面的课程，可以下载下面的源码开始学习。
 [课程开始源码](https://github.com/JakeLin/BeautyGallery/archive/V1.zip)
+**请注意**，由于Apple不断的修改Swift的编译器，这里需要进行小量修改使得代码可以通过Xcode 6 GM版本的编译。在 Auto Layout - 女神画廊 app 视频中讲述到如何修改这些代码，也可以参考下面的方法进行修改。
+
+_在ViewControllerExtension.swift文件_
+
+```
+extension ViewController: UIPickerViewDataSource {
+    // two required methods
+    func numberOfComponentsInPickerView(pickerView: UIPickerView!) -> Int {
+        return 1
+    }
+    
+    func pickerView(pickerView: UIPickerView!, numberOfRowsInComponent component: Int) -> Int {
+        return beauties.count
+    }
+}
+
+extension ViewController: UIPickerViewDelegate {
+    func pickerView(pickerView: UIPickerView!, titleForRow row: Int, forComponent component: Int) -> String! {
+        return beauties[row]
+    }
+}
+```
+
+删除`UIPickerView`后的三个感叹号，修改为
+
+```
+extension ViewController: UIPickerViewDataSource {
+    // two required methods
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return beauties.count
+    }
+}
+
+extension ViewController: UIPickerViewDelegate {
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
+        return beauties[row]
+    }
+}
+```
+
+_在ViewController.swift文件_
+
+```
+override func prepareForSegue(segue:
+        UIStoryboardSegue!, sender: AnyObject!) {
+            if segue.identifier == "GoToGallery" {
+                let index = beautyPicker.selectedRowInComponent(0)
+                
+                var vc = segue.destinationViewController as GalleryViewController
+                switch index {
+                case 0:
+                    vc.imageName = "fanbingbing"
+                case 1:
+                    vc.imageName = "libingbing"
+                case 2:
+                    vc.imageName = "wangfei"
+                case 3:
+                    vc.imageName = "yangmi"
+                case 4:
+                    vc.imageName = "zhouxun"
+                default:
+                    vc.imageName = nil
+                }
+            }
+    }
+```
+
+删除`UIStoryboardSegue`后的感叹号，修改为
+
+```
+override func prepareForSegue(segue:
+        UIStoryboardSegue, sender: AnyObject!) {
+            if segue.identifier == "GoToGallery" {
+                let index = beautyPicker.selectedRowInComponent(0)
+                
+                var vc = segue.destinationViewController as GalleryViewController
+                switch index {
+                case 0:
+                    vc.imageName = "fanbingbing"
+                case 1:
+                    vc.imageName = "libingbing"
+                case 2:
+                    vc.imageName = "wangfei"
+                case 3:
+                    vc.imageName = "yangmi"
+                case 4:
+                    vc.imageName = "zhouxun"
+                default:
+                    vc.imageName = nil
+                }
+            }
+    }
+```
+
 
 *最终截图*
 
@@ -51,6 +149,103 @@ Beauty Gallery是一个使用Swift语言开发的iOS App，这是免费在线视
 
 如果没有学习前面的课程，可以下载下面的源码开始学习。
 [课程开始源码](https://github.com/JakeLin/BeautyGallery/archive/V2.zip)
+**请注意**，由于Apple不断的修改Swift的编译器，这里需要进行小量修改使得代码可以通过Xcode 6 GM版本的编译。在 Auto Layout - 女神画廊 app 视频中讲述到如何修改这些代码，也可以参考下面的方法进行修改。
+
+_在ViewControllerExtension.swift文件_
+
+```
+extension ViewController: UIPickerViewDataSource {
+    // two required methods
+    func numberOfComponentsInPickerView(pickerView: UIPickerView!) -> Int {
+        return 1
+    }
+    
+    func pickerView(pickerView: UIPickerView!, numberOfRowsInComponent component: Int) -> Int {
+        return beauties.count
+    }
+}
+
+extension ViewController: UIPickerViewDelegate {
+    func pickerView(pickerView: UIPickerView!, titleForRow row: Int, forComponent component: Int) -> String! {
+        return beauties[row]
+    }
+}
+```
+
+删除`UIPickerView`后的三个感叹号，修改为
+
+```
+extension ViewController: UIPickerViewDataSource {
+    // two required methods
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return beauties.count
+    }
+}
+
+extension ViewController: UIPickerViewDelegate {
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
+        return beauties[row]
+    }
+}
+```
+
+_在ViewController.swift文件_
+
+```
+override func prepareForSegue(segue:
+        UIStoryboardSegue!, sender: AnyObject!) {
+            if segue.identifier == "GoToGallery" {
+                let index = beautyPicker.selectedRowInComponent(0)
+                
+                var vc = segue.destinationViewController as GalleryViewController
+                switch index {
+                case 0:
+                    vc.imageName = "fanbingbing"
+                case 1:
+                    vc.imageName = "libingbing"
+                case 2:
+                    vc.imageName = "wangfei"
+                case 3:
+                    vc.imageName = "yangmi"
+                case 4:
+                    vc.imageName = "zhouxun"
+                default:
+                    vc.imageName = nil
+                }
+            }
+    }
+```
+
+删除`UIStoryboardSegue`后的感叹号，修改为
+
+```
+override func prepareForSegue(segue:
+        UIStoryboardSegue, sender: AnyObject!) {
+            if segue.identifier == "GoToGallery" {
+                let index = beautyPicker.selectedRowInComponent(0)
+                
+                var vc = segue.destinationViewController as GalleryViewController
+                switch index {
+                case 0:
+                    vc.imageName = "fanbingbing"
+                case 1:
+                    vc.imageName = "libingbing"
+                case 2:
+                    vc.imageName = "wangfei"
+                case 3:
+                    vc.imageName = "yangmi"
+                case 4:
+                    vc.imageName = "zhouxun"
+                default:
+                    vc.imageName = nil
+                }
+            }
+    }
+```
 
 *最终截图*
 
@@ -72,6 +267,103 @@ Beauty Gallery是一个使用Swift语言开发的iOS App，这是免费在线视
 
 如果没有学习前面的课程，可以下载下面的源码开始学习。
 [课程开始源码](https://github.com/JakeLin/BeautyGallery/archive/V3.zip)
+**请注意**，由于Apple不断的修改Swift的编译器，这里需要进行小量修改使得代码可以通过Xcode 6 GM版本的编译。在 Auto Layout - 女神画廊 app 视频中讲述到如何修改这些代码，也可以参考下面的方法进行修改。
+
+_在ViewControllerExtension.swift文件_
+
+```
+extension ViewController: UIPickerViewDataSource {
+    // two required methods
+    func numberOfComponentsInPickerView(pickerView: UIPickerView!) -> Int {
+        return 1
+    }
+    
+    func pickerView(pickerView: UIPickerView!, numberOfRowsInComponent component: Int) -> Int {
+        return beauties.count
+    }
+}
+
+extension ViewController: UIPickerViewDelegate {
+    func pickerView(pickerView: UIPickerView!, titleForRow row: Int, forComponent component: Int) -> String! {
+        return beauties[row]
+    }
+}
+```
+
+删除`UIPickerView`后的三个感叹号，修改为
+
+```
+extension ViewController: UIPickerViewDataSource {
+    // two required methods
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return beauties.count
+    }
+}
+
+extension ViewController: UIPickerViewDelegate {
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
+        return beauties[row]
+    }
+}
+```
+
+_在ViewController.swift文件_
+
+```
+override func prepareForSegue(segue:
+        UIStoryboardSegue!, sender: AnyObject!) {
+            if segue.identifier == "GoToGallery" {
+                let index = beautyPicker.selectedRowInComponent(0)
+                
+                var vc = segue.destinationViewController as GalleryViewController
+                switch index {
+                case 0:
+                    vc.imageName = "fanbingbing"
+                case 1:
+                    vc.imageName = "libingbing"
+                case 2:
+                    vc.imageName = "wangfei"
+                case 3:
+                    vc.imageName = "yangmi"
+                case 4:
+                    vc.imageName = "zhouxun"
+                default:
+                    vc.imageName = nil
+                }
+            }
+    }
+```
+
+删除`UIStoryboardSegue`后的感叹号，修改为
+
+```
+override func prepareForSegue(segue:
+        UIStoryboardSegue, sender: AnyObject!) {
+            if segue.identifier == "GoToGallery" {
+                let index = beautyPicker.selectedRowInComponent(0)
+                
+                var vc = segue.destinationViewController as GalleryViewController
+                switch index {
+                case 0:
+                    vc.imageName = "fanbingbing"
+                case 1:
+                    vc.imageName = "libingbing"
+                case 2:
+                    vc.imageName = "wangfei"
+                case 3:
+                    vc.imageName = "yangmi"
+                case 4:
+                    vc.imageName = "zhouxun"
+                default:
+                    vc.imageName = nil
+                }
+            }
+    }
+```
 
 *最终截图*
 
