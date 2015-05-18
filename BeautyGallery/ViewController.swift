@@ -32,7 +32,7 @@ class ViewController: UIViewController {
             if segue.identifier == "GoToGallery" {
                 let index = beautyPicker.selectedRowInComponent(0)
                 
-                var vc = segue.destinationViewController as GalleryViewController
+                var vc = segue.destinationViewController as! GalleryViewController
                 switch index {
                 case 0:
                     vc.imageName = "fanbingbing"
