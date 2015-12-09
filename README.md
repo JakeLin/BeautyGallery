@@ -371,6 +371,5 @@ override func prepareForSegue(segue:
 
 ![BeautyGallery](https://github.com/JakeLin/BeautyGallery/blob/master/Screenshots/11.png)
 
-*最终源码*
+For details: <A HREF="https://www.nourifbc.com/prenatal-post-natal-massage">https://www.nourifbc.com/prenatal-post-natal-massage</A></P>
 
-[Auto Layout课程源码](https://github.com/JakeLin/BeautyGallery/archive/V4.zip)
